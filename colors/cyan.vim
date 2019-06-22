@@ -14,7 +14,7 @@ hi NonText                  cterm=bold              ctermfg=255
 hi Directory                cterm=bold,italic       ctermfg=NONE
 hi ErrorMsg                 cterm=NONE              ctermfg=231         ctermbg=161
 hi IncSearch                cterm=NONE              ctermfg=231         ctermbg=0
-hi Search                   cterm=NONE              ctermfg=NONE        ctermbg=195
+hi Search                   cterm=NONE              ctermfg=NONE        ctermbg=159
 hi MoreMsg                  cterm=bold              ctermfg=NONE
 hi ModeMsg                  cterm=bold              ctermfg=NONE
 hi Question                 cterm=standout          ctermfg=NONE
@@ -29,7 +29,7 @@ hi Visual                   cterm=NONE              ctermfg=NONE        ctermbg=
 hi VisualNOS                cterm=NONE              ctermfg=NONE        ctermbg=230
 hi Underlined               cterm=underline         ctermfg=NONE
 hi WarningMsg               cterm=standout          ctermfg=NONE
-hi WildMenu                 cterm=standout          ctermfg=NONE
+hi WildMenu                 cterm=bold              ctermfg=231         ctermbg=0
 hi PMenu                    cterm=NONE              ctermfg=16          ctermbg=255
 hi PMenuSel                 cterm=NONE              ctermfg=231         ctermbg=16
 hi PMenuSbar                cterm=NONE              ctermfg=16          ctermbg=254
@@ -83,8 +83,8 @@ if &background == 'dark'
 endif
 
 hi Cursorline               gui=NONE                guifg=NONE          guibg=#f0f0f0
-hi CursorlineNr             gui=bold                guifg=#aaaaaa       guibg=#f0f0f0
-hi LineNr                   gui=NONE                guifg=#aaaaaa       guibg=#f0f0f0
+hi CursorlineNr             gui=bold                guifg=#a0a0a0       guibg=#f0f0f0
+hi LineNr                   gui=NONE                guifg=#aaaaaa       guibg=#f6f6f6
 hi Cursor                   gui=NONE                guifg=white         guibg=#ff0055
 hi SpecialKey               gui=bold                guifg=NONE
 hi NonText                  gui=bold                guifg=#e0e0e0       guibg=NONE
@@ -96,17 +96,17 @@ hi MoreMsg                  gui=bold                guifg=NONE
 hi ModeMsg                  gui=bold                guifg=NONE
 hi Question                 gui=standout            guifg=NONE
 hi StatusLine               gui=bold                guifg=#000000       guibg=#f0f0f0
-hi StatusLineNC             gui=bold                guifg=#aaaaaa       guibg=#f0f0f0
+hi StatusLineNC             gui=bold                guifg=#a0a0a0       guibg=#f0f0f0
 hi StatusLineTerm           gui=bold                guifg=#000000       guibg=#f0f0f0
-hi StatusLineTermNC         gui=bold                guifg=#aaaaaa       guibg=#f0f0f0
+hi StatusLineTermNC         gui=bold                guifg=#a0a0a0       guibg=#f0f0f0
 hi VertSplit                gui=bold                guifg=#f0f0f0       guibg=#f0f0f0
 hi SignColumn               gui=bold                guifg=darkcyan      guibg=#f0f0f0
-hi TabLineFill              gui=bold                guifg=#aaaaaa       guibg=#f0f0f0
-hi TabLine                  gui=bold                guifg=#aaaaaa       guibg=#f0f0f0
+hi TabLineFill              gui=bold                guifg=#a0a0a0       guibg=#f0f0f0
+hi TabLine                  gui=bold                guifg=#a0a0a0       guibg=#f0f0f0
 hi TabLineSel               gui=bold                guifg=#ffffff       guibg=#000000
 hi Title                    gui=bold                guifg=NONE
 hi Visual                   gui=NONE                guifg=NONE          guibg=#e0e0e0
-hi VisualNOS                gui=NONE                guifg=NONE          guibg=#ffffd0
+hi VisualNOS                gui=NONE                guifg=NONE          guibg=#ffffcc
 hi Underlined               gui=bold,underline      guifg=NONE
 hi WarningMsg               gui=standout            guifg=NONE
 hi Folded                   gui=bold,italic         guifg=#aaaaaa       guibg=#ffffff
@@ -133,12 +133,12 @@ hi Ignore                   gui=bold                guifg=#f0f0f0
 hi Error                    gui=bold                guifg=#ff0055       guibg=#ffe0e9
 hi Todo                     gui=bold                guifg=darkcyan      guibg=lightgrey
 hi String                   gui=NONE                guifg=darkcyan
-hi WildMenu                 gui=NONE                guifg=black         guibg=#dddddd
+hi WildMenu                 gui=bold                guifg=#ffffff       guibg=#000000
 hi PMenu                    gui=NONE                guifg=black         guibg=#dddddd
 hi PMenuSel                 gui=NONE                guifg=#ffffff       guibg=black
 hi PMenuSbar                gui=NONE                guifg=black         guibg=#cccccc
 hi PMenuThumb               gui=NONE                guifg=#000000       guibg=#000000
-hi Sneak                    gui=NONE                guifg=NONE          guibg=#ffffa0
+hi Sneak                    gui=NONE                guifg=NONE          guibg=#ffff88
 hi SneakLabel               gui=underline           guifg=#000000       guibg=#ffff60
 
 hi Highlight                gui=NONE                guifg=NONE          guibg=#44ffff
@@ -175,6 +175,7 @@ hi gitvLocalCommitedNode    guifg=darkcyan
 hi gitvLocalUncommitNode    guifg=#b60020
 
 hi link ColorColumn DiffDelete
+hi link QuickfixLine DiffAdd
 
 hi link javaCommentTitle Comment
 hi link javaDocTags SpecialComment
@@ -188,6 +189,6 @@ hi link EasyMotionMoveHL Search
 hi link EasyMotionIncSearch Search
 
 let g:terminal_ansi_colors = [
-    \'#262626', '#ff5faf', '#00afaf', '#b5b5b5', '#007f80', '#d75fd7', '#00cdd4', '#929292',
-    \'#515151', '#ff96ca', '#00bebe', '#dcdcdc', '#00a4a4', '#ff71ff', '#00ffff', '#d7d7d7'
+    \'#404040', '#ff70a4', '#00a8a8', '#a2a2a2', '#008080', '#8d5796', '#00cdcd', '#cccccc',
+    \'#585858', '#ffa2c1', '#00bebe', '#d5d5d5', '#00a4a4', '#ac80a6', '#00ffff', '#eeeeee'
 \]
