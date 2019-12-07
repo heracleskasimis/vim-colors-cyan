@@ -6,6 +6,7 @@ if version > 580
 endif
 let g:colors_name="cyan"
 
+hi Normal                   cterm=NONE              ctermfg=232         ctermbg=231
 hi Cursorline               cterm=NONE              ctermfg=NONE        ctermbg=255
 hi CursorlineNr             cterm=NONE              ctermfg=219         ctermbg=NONE
 hi LineNr                   cterm=NONE              ctermfg=250         ctermbg=NONE
@@ -73,7 +74,8 @@ hi User8                    cterm=bold              ctermfg=NONE        ctermbg=
 hi User9                    cterm=bold              ctermfg=232         ctermbg=254
 
 if &background == 'dark'
-    hi Cursorline           cterm=NONE              ctermfg=NONE        ctermbg=232
+    hi Normal               cterm=NONE              ctermfg=231         ctermbg=232
+    hi Cursorline           cterm=NONE              ctermfg=NONE        ctermbg=233
     hi Visual               cterm=NONE              ctermfg=NONE        ctermbg=8
     hi VisualNOS            cterm=NONE              ctermfg=NONE        ctermbg=58
     hi NonText              cterm=bold              ctermfg=0
@@ -211,8 +213,8 @@ if &background == 'dark'
     hi TabLineSel           gui=bold                guifg=#aaaaaa       guibg=#232323
     hi User3                gui=bold                guifg=NONE          guibg=#222222
     hi User9                gui=bold                guifg=NONE          guibg=#303030
-    hi DiffAdd              gui=NONE                guifg=#007777       guibg=#3e3e3e
-    hi DiffAdded            gui=NONE                guifg=#007777       guibg=#3e3e3e
+    hi DiffAdd              gui=NONE                guifg=#008080       guibg=#3e3e3e
+    hi DiffAdded            gui=NONE                guifg=#008888       guibg=#3e3e3e
     hi DiffChange           gui=bold                guifg=#bbbb88       guibg=#3e3e3e
     hi DiffDelete           gui=NONE                guifg=#ff0066       guibg=#3e3e3e
     hi DiffRemoved          gui=NONE                guifg=#ff0066       guibg=#3e3e3e
